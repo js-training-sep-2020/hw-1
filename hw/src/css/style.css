@@ -86,15 +86,15 @@ h6 {
 body {
   background: url(../img/background.png) no-repeat center center fixed;
   background-size: cover;
-  font-family: AvenirNext;
-  font-size: 16px;
-  line-height: 12px;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .weatherWidget {
+  font-family: AvenirNext;
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
   height: 412px;
   width: 615px;
   display: -webkit-box;
@@ -104,6 +104,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .weatherWidget div {
@@ -111,6 +119,21 @@ body {
   width: 205px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .weatherWidget div.first {
@@ -141,4 +164,55 @@ body {
 .weatherWidget div.sixth {
   background-color: #bd53cd;
   text-shadow: 0px 1px 0px rgba(189, 83, 205, 0.75);
+}
+
+.weatherWidget div .weather {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weatherWidget div p {
+  margin: 16px 0 16px;
+}
+
+.inWeek {
+  background-color: #bc3459;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50%;
+  width: 100%;
+}
+
+.inWeek li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.inWeek li:first-child {
+  padding-left: 24px;
+}
+
+.inWeek li:last-child {
+  padding-right: 24px;
 }
