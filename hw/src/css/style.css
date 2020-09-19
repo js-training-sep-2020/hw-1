@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNextCyr-Bold.ttf) format("opentype");
+}
+
+body {
+  background: url(../img/background.png) no-repeat center center fixed;
+  background-size: cover;
+  font-family: AvenirNext;
+  font-size: 16px;
+  line-height: 12px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.weatherWidget {
+  height: 412px;
+  width: 615px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.weatherWidget div {
+  height: 206px;
+  width: 205px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.weatherWidget div.first {
+  background-color: #05b3db;
+  text-shadow: 0px 1px 0px rgba(5, 179, 219, 0.75);
+}
+
+.weatherWidget div.second {
+  background-color: #4ed385;
+  text-shadow: 0px 1px 0px rgba(78, 211, 133, 0.75);
+}
+
+.weatherWidget div.third {
+  background-color: #6038f5;
+  text-shadow: 0px 1px 0px rgba(96, 56, 245, 0.75);
+}
+
+.weatherWidget div.fourth {
+  background-color: #e3b63d;
+  text-shadow: 0px 1px 0px rgba(227, 182, 61, 0.75);
+}
+
+.weatherWidget div.fifth {
+  background-color: #dc3d66;
+  text-shadow: 0px 1px 0px rgba(220, 61, 102, 0.75);
+}
+
+.weatherWidget div.sixth {
+  background-color: #bd53cd;
+  text-shadow: 0px 1px 0px rgba(189, 83, 205, 0.75);
+}
