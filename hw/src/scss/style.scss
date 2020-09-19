@@ -1,52 +1,7 @@
 @import "_nullstyle";
 @import "_variables";
-@font-face {
-    font-family: $FONTF;
-    src: $FONTFURL format("opentype");
-}
-
-@mixin bcAndTs ($color, $tsSize, $transparency) {
-    background-color: $color;
-    text-shadow: $tsSize rgba($color, $transparency);
-}
-
+@import "_weatherWidget";
 body {
     background: $BGFORBODY no-repeat center center fixed;
     background-size: cover;
-    font-family: $FONTF;
-    font-size: $FONTS;
-    line-height: $LINEH;
-    color: $WHITE;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.weatherWidget {
-    height: $HEIGHTWW;
-    width: $WIDTHWW;
-    display: flex;
-    flex-flow: row wrap;
-    div {
-        height: $HEIGHTBLOCK;
-        width: $WIDTHBLOCK;
-        box-shadow: $BOXSHADOW;
-        &.first {
-            @include bcAndTs ($CYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-        &.second {
-            @include bcAndTs ($GREENCYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-        &.third {
-            @include bcAndTs ($BLUEMAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-        &.fourth {
-            @include bcAndTs ( $YELLOW, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-        &.fifth {
-            @include bcAndTs ($PINK, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-        &.sixth {
-            @include bcAndTs ($MAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
-        }
-    }
 }

@@ -1,0 +1,89 @@
+@import "_variablesForWW";
+@font-face {
+    font-family: $FONTF;
+    src: $FONTFURL format("opentype");
+}
+
+@mixin bcAndTs ($color, $tsSize, $transparency) {
+    background-color: $color;
+    text-shadow: $tsSize rgba($color, $transparency);
+}
+
+.weatherWidget {
+    font-family: $FONTF;
+    font-size: $FONTS;
+    line-height: $LINEH;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $WHITE;
+    height: $HEIGHTWW;
+    width: $WIDTHWW;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: $BOXSHADOWWW;
+    position: absolute;
+    margin: auto;
+    top: $TOPWW;
+    right: $RIGHTWW;
+    bottom: $BOTTOMWW;
+    left: $LEFTWW;
+    div {
+        height: $HEIGHTBLOCK;
+        width: $WIDTHBLOCK;
+        box-shadow: $BOXSHADOWBLOCK;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        &.first {
+            @include bcAndTs ($CYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        &.second {
+            @include bcAndTs ($GREENCYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        &.third {
+            @include bcAndTs ($BLUEMAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        &.fourth {
+            @include bcAndTs ( $YELLOW, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        &.fifth {
+            @include bcAndTs ($PINK, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        &.sixth {
+            @include bcAndTs ($MAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+        }
+        .weather {
+            height: $HEIGHTPICTURE;
+            display: flex;
+            align-items: center;
+        }
+        p {
+            margin: $MARGINP;
+        }
+    }
+}
+
+.inWeek {
+    background-color: $DARKPINK;
+    display: flex;
+    justify-content: space-around;
+    height: $HEIGHTUL;
+    width: $WIDTHUL;
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: $FONTSSMALL;
+        padding-top: $PADDINGTOPLI;
+        padding-bottom: $PADDINGBOTTOMLI;
+        &:first-child {
+            padding-left: $PADDINGLEFTRIGHTLI;
+        }
+        &:last-child {
+            padding-right: $PADDINGLEFTRIGHTLI;
+        }
+    }
+}
