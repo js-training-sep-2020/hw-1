@@ -1,0 +1,25 @@
+// Для текста
+$FONTF: AvenirNext;
+$FONTFURL: url(../fonts/AvenirNextCyr-Bold.ttf);
+$FONTS: 16px;
+$LINEH: 12px;
+// Для body
+$BGFORBODY: url(../img/background.png);
+// Для главного контейнера Weather Widget
+$HEIGHTWW: 412px;
+$WIDTHWW: 615px;
+//Для для блоков с погодой (div)
+$HEIGHTBLOCK: 206px;
+$WIDTHBLOCK: 205px;
+$BOXSHADOW: 0 0 2px rgba(0, 0, 0, 0.5);
+// Цвета
+$WHITE: rgb(255, 255, 255);
+$CYAN: rgb(5, 179, 219);
+$GREENCYAN: rgb(78, 211, 133);
+$BLUEMAGENTA: rgb(96, 56, 245);
+$YELLOW: rgb(227, 182, 61);
+$PINK: rgb(220, 61, 102);
+$MAGENTA: rgb(189, 83, 205);
+// Для text-shadow
+$SHODOWSIZE: 0px 1px 0px;
+$SHODOWTRANSPARENCY: 0.75;
