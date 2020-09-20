@@ -83,11 +83,6 @@ h6 {
   src: url(../fonts/AvenirNextCyr-Bold.ttf) format("opentype");
 }
 
-body {
-  background: url(../img/background.png) no-repeat center center fixed;
-  background-size: cover;
-}
-
 .weatherWidget {
   font-family: AvenirNext;
   font-size: 16px;
@@ -114,7 +109,7 @@ body {
   left: 0;
 }
 
-.weatherWidget div {
+.weatherWidget .block {
   height: 206px;
   width: 205px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -136,37 +131,37 @@ body {
           justify-content: center;
 }
 
-.weatherWidget div.first {
+.weatherWidget .block.first {
   background-color: #05b3db;
-  text-shadow: 0px 1px 0px rgba(5, 179, 219, 0.75);
+  text-shadow: 0px 1px 0px rgba(6, 179, 219, 0.75);
 }
 
-.weatherWidget div.second {
+.weatherWidget .block.second {
   background-color: #4ed385;
-  text-shadow: 0px 1px 0px rgba(78, 211, 133, 0.75);
+  text-shadow: 0px 1px 0px rgba(77, 209, 132, 0.75);
 }
 
-.weatherWidget div.third {
+.weatherWidget .block.third {
   background-color: #6038f5;
-  text-shadow: 0px 1px 0px rgba(96, 56, 245, 0.75);
+  text-shadow: 0px 1px 0px rgba(97, 57, 246, 0.75);
 }
 
-.weatherWidget div.fourth {
+.weatherWidget .block.fourth {
   background-color: #e3b63d;
   text-shadow: 0px 1px 0px rgba(227, 182, 61, 0.75);
 }
 
-.weatherWidget div.fifth {
+.weatherWidget .block.fifth {
   background-color: #dc3d66;
   text-shadow: 0px 1px 0px rgba(220, 61, 102, 0.75);
 }
 
-.weatherWidget div.sixth {
+.weatherWidget .block.sixth {
   background-color: #bd53cd;
-  text-shadow: 0px 1px 0px rgba(189, 83, 205, 0.75);
+  text-shadow: 0px 1px 0px rgba(189, 84, 205, 0.75);
 }
 
-.weatherWidget div .weather {
+.weatherWidget .block .weather {
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +171,7 @@ body {
           align-items: center;
 }
 
-.weatherWidget div p {
+.weatherWidget .block .forecast {
   margin: 16px 0 16px;
 }
 
@@ -215,4 +210,9 @@ body {
 
 .inWeek li:last-child {
   padding-right: 24px;
+}
+
+body {
+  background: url(../img/background.png) no-repeat center center fixed;
+  background-size: cover;
 }
