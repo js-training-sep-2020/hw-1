@@ -4,14 +4,14 @@
     src: $FONTFURL format("opentype");
 }
 
-@mixin bcAndTs ($color, $tsSize, $transparency) {
+@mixin bcAndTs ($color, $tscolor, $tsSize: $SHODOWSIZE, $transparency:$SHODOWTRANSPARENCY) {
     background-color: $color;
-    text-shadow: $tsSize rgba($color, $transparency);
+    text-shadow: $tsSize rgba($tscolor, $transparency);
 }
 
 .weatherWidget {
     font-family: $FONTF;
-    font-size: $FONTS;
+    font-size: $FONTSMEDIUM;
     line-height: $LINEH;
     font-weight: bold;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
     right: $RIGHTWW;
     bottom: $BOTTOMWW;
     left: $LEFTWW;
-    div {
+    .block {
         height: $HEIGHTBLOCK;
         width: $WIDTHBLOCK;
         box-shadow: $BOXSHADOWBLOCK;
@@ -37,29 +37,29 @@
         flex-direction: column;
         justify-content: center;
         &.first {
-            @include bcAndTs ($CYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($CYAN, $CYANFORSHODOW);
         }
         &.second {
-            @include bcAndTs ($GREENCYAN, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($GREENCYAN, $GREENCYANFORSHODOW);
         }
         &.third {
-            @include bcAndTs ($BLUEMAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($BLUEMAGENTA, $BLUEMAGENTAFORSHODOW);
         }
         &.fourth {
-            @include bcAndTs ( $YELLOW, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($YELLOW, $YELLOWFORSHODOW);
         }
         &.fifth {
-            @include bcAndTs ($PINK, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($PINK, $PINKFORSHODOW);
         }
         &.sixth {
-            @include bcAndTs ($MAGENTA, $SHODOWSIZE, $SHODOWTRANSPARENCY);
+            @include bcAndTs ($MAGENTA, $MAGENTAFORSHODOW);
         }
         .weather {
             height: $HEIGHTPICTURE;
             display: flex;
             align-items: center;
         }
-        p {
+        .forecast {
             margin: $MARGINP;
         }
     }
