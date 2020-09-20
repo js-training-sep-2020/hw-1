@@ -5,16 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Paris</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/weather_widget.css">
 </head>
 <body>
 <section id="weather-widget">
-  <div id="main-part">
-    <div id="current-day"></div>
-    <div id="current-weather"></div>
+  <div id="main-part" class="clearfix">
+    <div id="current-weather">
+      <p id="current-temp">12 °</p>
+      <p id="current-place">Paris, France</p>
+      <div id="current-wind">
+        <div id="wind-icon"></div>
+        <span id="wind-speed">14</span>
+        <span id="wind-unit">mph</span>
+      </div>
+    </div>
+    <div id="current-day">
+      <p id="current-day-of-week">Friday</p>
+      <p id="current-date">August, 23rd</p>
+    </div>
   </div>
-  <div id ="carousel">
+  <div id="carousel">
     <div id="arrow-left"></div>
     <div class="daily-forecast"></div>
     <div class="divider"></div>
