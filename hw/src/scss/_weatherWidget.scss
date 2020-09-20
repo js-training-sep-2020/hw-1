@@ -4,9 +4,9 @@
     src: $FONTFURL format("opentype");
 }
 
-@mixin bcAndTs ($color, $tscolor, $tsSize: $SHODOWSIZE, $transparency:$SHODOWTRANSPARENCY) {
+@mixin bcAndTs ($color, $tsColor, $tsSize: $SHODOWSIZE, $transparency:$SHODOWTRANSPARENCY) {
     background-color: $color;
-    text-shadow: $tsSize rgba($tscolor, $transparency);
+    text-shadow: $tsSize rgba($tsColor, $transparency);
 }
 
 .weatherWidget {
