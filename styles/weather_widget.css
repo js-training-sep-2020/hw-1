@@ -26,7 +26,7 @@
 #weather-widget #main-part {
   position: relative;
   height: 327px;
-  padding: 67px 57px 0;
+  padding: 76px 57px 0;
 }
 
 /* ======================================== */
@@ -38,7 +38,7 @@
 }
 
 #weather-widget #current-day-of-week {
-  margin-top: 2px;
+  margin-top: 1px;
   font-size: 30px;
   letter-spacing: 0.02em;
 }
@@ -55,13 +55,12 @@
 }
 
 #weather-widget #current-temp {
-  margin: 0 0 1px 0;
   font-size: 92px;
   font-weight: 900;
 }
 
 #weather-widget #current-place {
-  margin: 0 0 20px 4px;
+  margin: -6px 0 20px 4px;
   font-size: 22px;
   letter-spacing: 0.02em;
 }
@@ -76,13 +75,13 @@
   vertical-align: bottom;
   width: 43px;
   height: 27px;
-  margin: 1px 12px 2px 0;
+  margin: 0 8px 2px 0;
   background: no-repeat url("../img/icon_wind.png");
 }
 
 #weather-widget #wind-speed {
   display: inline-block;
-  margin-right: 4px;
+  margin-right: 2px;
   font-size: 30px;
 }
 
