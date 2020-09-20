@@ -1,0 +1,105 @@
+
+body{
+    vertical-align: middle;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-attachment: fixed, local;
+}
+#img{
+    padding-bottom: 10%;
+}
+
+#widget{
+    font-size: 130%;
+    width: 70%;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 600;
+    font-variant: small-caps;
+    
+}
+
+#Chicago{
+    background-color: #06b3db;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#Seattle{
+    background-color: #66cc99;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#Brooklyn{
+    background-color: #6a44f5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#Portland{
+    background-color: #e3b63d;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+#days{
+    background-color: #dc3d66;
+    padding-bottom: 0;
+    padding-top: 5%;
+}
+
+#week{
+    font-size: 90%;
+    background-color: #b53355;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+}
+#SanJose{
+    background-color: #bd54cd;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.col{
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media  screen and (max-width: 850px)  {
+    body{
+        background-image: url(bg-mobile.png);
+        font-size: 80%;
+    }
+    #week{
+        font-size: 70%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media  screen and (max-width: 850px){
+    body{
+        background-image: url(bg-smaller-mobile.png);
+        font-size: 60%;
+    }
+    #week{
+        font-size: 50%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+}
+@media  screen and (max-width: 215px){
+    body{
+        background-image: url(bg-extra-smaller-mobile.png)
+    }
+}
