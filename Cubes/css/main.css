@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cubes-section {
+    width: 100%;
+    height: 100vh;
+    min-width: 615px;
+    min-height: 410px;
+    background-image: url(../img/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box; /*can i use */
+    padding-top: calc(50vh - 205px);
+}
+
+/* wdget */
+
+.widget {
+    width: 615px;
+    height: 410px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+    .widget-item {
+        padding: 35px;
+    }
+
+    .widget-item_chicago {
+        background-color: #69bee0;
+    }
+
+        .widget-item_chicago .widget-item__icon {
+            background-image: url(../img/CR\ Alt.png);
+            
+        }
+
+    .widget-item_seattle {
+        background-color: #8dd79a;
+    }
+
+        .widget-item_seattle .widget-item__icon {
+            background-image: url(../img/Fog.png);
+            
+        }
+
+    .widget-item_brooklyn {
+        background-color: #6e59f4;
+    }
+
+        .widget-item_brooklyn .widget-item__icon {
+            background-image: url(../img/CS.png);
+            
+        }
+
+    .widget-item_portland {
+        background-color: #dec057;
+    }
+
+        .widget-item_portland .widget-item__icon {
+            background-image: url(../img/CSS.png);
+            
+        }
+
+    .widget-item_new-york {
+        background-color: #c85777;
+    }
+
+        .widget-item_new-york .widget-item__icon {
+            background-image: url(../img/CWM.png);
+            
+        }
+
+    .widget-item_san-jose {
+        background-color: #b56fd2;
+    }
+
+        .widget-item_san-jose .widget-item__icon {
+            background-image: url(../img/Cloud.png);
+            
+        }
+
+        .widget-item__icon {
+            width: 90px;
+            height: 90px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto 15px;
+        }
+
+
