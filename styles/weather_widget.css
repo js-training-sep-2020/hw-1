@@ -15,7 +15,6 @@
   font-weight: 300;
   line-height: 1;
   color: white;
-  border: 1px solid black;
 }
 
 #weather-widget * {
@@ -30,7 +29,9 @@
   background-color: burlywood;
 }
 
-/*  Current day  */
+/* ======================================== */
+/*  Current day                             */
+/* ======================================== */
 #weather-widget #current-day {
   float: right;
   margin: 0 26px 0 0;
@@ -46,7 +47,9 @@
   font-size: 14px;
 }
 
-/*  Current weather  */
+/* ======================================== */
+/*  Current weather                         */
+/* ======================================== */
 #weather-widget #current-weather {
   float: right;
 }
@@ -88,8 +91,74 @@
   font-size: 14px;
 }
 
-/*  Carousel. Weather forecast  */
+/* ======================================== */
+/*  Carousel. Weather forecast              */
+/* ======================================== */
 #weather-widget #carousel {
   height: 108px;
+  width: 696px;
+  text-align: center;
+  padding: 0 56px;
   background-color: gray;
+}
+
+#weather-widget .nav-arrows {
+  display: inline-block;
+  width: 16px;
+  height: 108px;
+  cursor: pointer;
+}
+
+#weather-widget #arrow-left {
+  float: left;
+  background: center no-repeat url("../img/icon_arrow_left.png");
+}
+
+#weather-widget #arrow-right {
+  float: right;
+  background: center no-repeat url("../img/icon_arrow_right.png");
+}
+
+#weather-widget .divider {
+  display: inline-block;
+  width: 0;
+  height: 80px;
+  margin: 14px 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#weather-widget #forecast-container,
+#weather-widget #forecast-container > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#weather-widget .day-of-week {
+  padding: 10px 24px 0;
+}
+
+#weather-widget .temperature {
+  padding: 0 0 0 8px;
+}
+
+#weather-widget .weather-icons {
+  width: 48px;
+  height: 36px;
+  margin: 8px auto;
+}
+
+#weather-widget #rain-icon {
+  background: url("../img/icon_weather_rain.png");
+}
+
+#weather-widget #cloudy-icon {
+  background: url("../img/icon_weather_cloudy.png");
+}
+
+#weather-widget #sunny-icon {
+  background: url("../img/icon_weather_sunny.png");
+}
+
+#weather-widget #overcast-icon  {
+  background: url("../img/icon_weather_overcast.png");
 }
