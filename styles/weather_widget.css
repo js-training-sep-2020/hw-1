@@ -15,6 +15,7 @@
   font-weight: 300;
   line-height: 1;
   color: white;
+  background: url("../img/bg_paris.jpg") #D8DEE2;
 }
 
 #weather-widget * {
@@ -26,7 +27,6 @@
   position: relative;
   height: 327px;
   padding: 67px 57px 0;
-  background-color: burlywood;
 }
 
 /* ======================================== */
@@ -99,7 +99,7 @@
   width: 696px;
   text-align: center;
   padding: 0 56px;
-  background-color: gray;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #weather-widget .nav-arrows {
