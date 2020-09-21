@@ -60,7 +60,6 @@
 .weather-widget__box:hover .weather-widget__week-temperature_hide {
    display: flex;
    flex-direction: row;
-   background: rgba(0, 0, 0, .1);
    background: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, .01), rgba(0, 0, 0, .15));
    /* transition-delay: 300ms; */
 }
