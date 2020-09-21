@@ -80,7 +80,16 @@
 
 .weather-widget__title_less {
    font-size: 12px;
-   margin-top: 7px;
+   margin-top: 15px;
+}
+
+.weather-widget__title_temp {
+   font-size: 12px;
+   margin-bottom: 7px;
+}
+
+.weather-widget__icon_less {
+   margin: 5px;
 }
 
 img {
