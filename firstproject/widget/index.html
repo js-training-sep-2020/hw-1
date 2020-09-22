@@ -13,37 +13,64 @@
 </style>
 
 <body>
+  <div class="main_container">
     <div class="widget_container">
+
         <div class="date_temperature_block">
-          <div class="date">Friday August, <br/> 23rd </div>
-          <div class="temperature"><span class="twelve"> 12°</span> <br/> Paris,France  <br/>14 mph</div>
+          <div class="date">
+            <span class="current_day">Friday </span>
+            <div>
+              <span class="current_month">August,</span>
+              <span class="current_date">23rd</span>
+             </div>
+          </div>
+          <div class="temperature">
+            <span class="twelve"> 12°</span>
+            <span class="city"> Paris,France </span>
+            <div>
+              <span class="icon_wind"><img src="../icons/wind.png" alt="wind"></span>
+              <span class="speed">14</span>
+              <span class="mph"> mph</span>
+            </div>
+          </div>
         </div>
+
         <div class="bottom_week_arrows_block">
             <div class="prev">
-              <div> &#10094; </div> <!--maybe it's better to use an icon arrow-->
+             <div> &#10094; </div> <!--maybe it's better to use an icon arrow-->
             </div>
+
           <div class="days">
-          <div class="day monday">
-            <div>Monday<br/> 10°</div>
-            <span class="rain icon"><img src="../icons/rain.png" alt="rain"></span>
+            <div class="day monday">
+              <div><span class="first_day">Monday</span></div>
+              <div class="rain_icon_block"><span class="rain_icon"><img src="../icons/rain.png" alt="rain"></span></div>
+              <div><span class="first_day_temperature"> 10°</span></div>
+            </div>
+
+            <div class="day tuesday">
+              <span class="second_day">Tuesday</span>
+              <div class= "cloudy_icon_block"><span class="cloudy_icon"><img src="../icons/cloudy.png" alt="cloudy"></span></div>
+              <span class="second_day_temperature"> 15° </span>
+            </div>
+
+            <div class="day wensday">
+              <span class= "third_day">Wensday</span>
+              <div class="sunny_icon_block"><span class="sunny_icon"><img src="../icons/sunny.png" alt="sunny"></span></div>
+              <span class="third_day_temperature"> 23°</span>
+            </div>
+
+            <div class="day thursday">
+              <span class="forth_day">Thursday</span>
+              <div class="overcast_icon_block"><span class="overcast_icon"><img src="../icons/overcast.png" alt="overcast"></span></div>
+              <span class="fourth_day_tempetature"> 18°</span>
+            </div>
           </div>
-          <div class="day tuesday">
-            <div>Tuesday<br/> 15° </div>
-            <img src="../icons/ " alt="">
-          </div>
-          <div class="day wensday">
-            <div>Wensday <br/> 23° </div>
-            <img src="../icons/ " alt="">
-          </div>
-          <div class="day thursday">
-            <div>Thursday<br/> 18° </div>
-            <img src="../icons/ " alt="">
-          </div>
-        </div>
-          <div class="next">
-            <div> &#10095; </div>
-          </div>
+
+            <div class="next">
+             <div> &#10095; </div>
+            </div>
       </div>
     </div>
+  </div>
 </body>
 </html>
