@@ -1,0 +1,67 @@
+.widget{
+  @include text-style;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  background: url("../img/bg-widget.png") no-repeat center 100%;
+  &__container{
+    padding: 95px 92.5px;
+    width: 615px;
+    height: 410px;
+    display:flex;
+    flex-wrap:wrap;
+    background-image: url("../img/bg-container.png");
+  }
+  &__item{
+    height: 205px;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @each $name, $color in $name-colors{
+        &--#{$name} {
+        background: $color;
+      }
+    }
+    &--yellow, &--pink{
+      .widget__weather{margin-top: auto; margin-bottom: 35px;}
+      .widget__icon{margin-top: 40px;}
+    }
+    &--pink{
+      .widget__icon{padding: 13px;}
+    }
+  }
+  &__icon{
+      margin-top: 45px;
+      &__week{
+        margin-top: 23px;
+      }
+  }
+  &__weather{
+    margin-top: auto;
+    margin-bottom: 45px;
+  }
+  &__week{
+    background-color: $dark-red-color;
+    height: 102px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    }
+  &__day{
+    font-size: 12px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 15px;
+  }
+  &__day:last-child{
+    padding-right: 0px;
+  }
+
+}
