@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Weather</title>
+    <title>Tokyo</title>
 </head>
 <body>
-<section class="backgr position_parent">
+<div class="backgr position_parent">
     <div class="widget box_position">
         <div class="left_box">
             <div class="sky weather_img"></div>
@@ -19,7 +19,18 @@
             <div class="temp position_parent">
                 <p class="box_position_text temp_text">28 &degC</p>
             </div>
-            <div class="schedule"><img src="images/schedule.png"></div>
+            <div class="graph">
+                <svg height="100" width="300">
+                    <polyline points="5,25 45,75 65,55 105,40 145,75 175,25 205,55" stroke="#771921" fill="none"/>
+                    <circle r="3" cx="5" cy="25" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="45" cy="75" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="65" cy="55" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="105" cy="40" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="145" cy="75" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="175" cy="25" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="205" cy="55" fill="white" stroke="#771921" stroke-width="2"/>
+                </svg>
+            </div>
             <div class="next_day">
                 <div class="next_day_weather">
                     <img class="img_next" src="images/sunny_next.png">
@@ -48,6 +59,6 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 </body>
 </html>
