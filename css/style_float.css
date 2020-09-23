@@ -1,0 +1,137 @@
+@import "fonts.css";
+
+html {
+    box-sizing: border-box;
+    background: url("../image/background/backgroundImage.png") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*-----------split by block and style block-------------*/
+.content {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.8),
+    10px 10px 50px rgba(0, 0, 0, 0.8),
+    -10px -10px 50px rgba(0, 0, 0, 0.8),
+    -10px 10px 50px rgba(0, 0, 0, 0.8);
+}
+
+.block  {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+
+.three-col::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.block h1 {
+    color: white;
+    font-family: 'AvenirNextCyr-Medium', serif;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 44px;
+}
+
+.icons{
+    margin-top: 50px;
+    height: 50px;
+}
+
+/*---------------split by columns in block "every day"------------*/
+
+.col-1-4 {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icons2{
+    height: 50px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.icons-day{
+    height: 20px;
+}
+
+.col-1-4 h1{
+    color: white;
+    font-family: 'AvenirNextCyr-Medium', serif;
+    font-size: 14px;
+    margin: 12px 4px;
+}
+
+.col-1-4 p{
+    color: white;
+    font-family: 'AvenirNextCyr-Medium', serif;
+    font-size: 14px;
+    margin: 11px 4px;
+}
+
+
+/*--------------background color block---------------*/
+.chicago{
+    background-color: #06b3db;
+}
+
+.seattle{
+    background-color: #4ed486;
+}
+
+.brooklyn{
+    background-color: #6139f6;
+}
+
+.portland{
+    background-color: #e3b63d;
+}
+
+.every-day{
+    background-color: #dc3d66;
+}
+
+.san-jose{
+    background-color: #bd54cd;
+}
+
+.second-part{
+    background-color: #bd3559;
+}
+
+/*-----------media for change font-size and margin---------------*/
+
+@media screen and (max-width: 375px) {
+   .block h1{
+       font-size: 0.8em;
+    }
+    .col-1-4 h1{
+        font-size: 9px;
+    }
+
+    .col-1-4 p{
+        font-size: 12px;
+        margin: 6px 4px;
+    }
+}
