@@ -1,90 +1,87 @@
-.widget{
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    background: url("../img/bg-widget.png") no-repeat center 100%;
+.widget {
+  font-family: "Avenir Next";
+  font-size: 16px;
+  font-weight: bold;
+  font-height: 11.52px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  background: url("../img/bg-widget.png") no-repeat center 100%;
 }
-.container{
-    padding: 96px 94px;
-    width: 612px;
-    height: 408px;
-    display:flex;
-    flex-wrap:wrap;
-    background-image: url("../img/bg-container.png");
+.widget__container {
+  padding: 95px 92.5px;
+  width: 615px;
+  height: 410px;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("../img/bg-container.png");
 }
-.widget-item{
-    height: 204px;
-    width: 204px;
-    text-align: center;
+.widget__item {
+  height: 205px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-img.widget-icon-cwm{
-    margin-top: 25px;
-    margin-bottom: 7px;
+.widget__item--blue {
+  background: #06b3db;
 }
-.widget-icon{
-    margin-top: 45px;
+.widget__item--green {
+  background: #4ed486;
 }
-
-.item-first{
-    background-color: #06b3db;
+.widget__item--purple {
+  background: #6139f6;
 }
-.item-second{
-    background-color: #4ed486;
+.widget__item--yellow {
+  background: #e3b63d;
 }
-.item-third{
-    background-color: #6139f6;
+.widget__item--red {
+  background: #dc3d66;
 }
-.item-fourth{
-    background-color: #e3b63d;
+.widget__item--pink {
+  background: #bd54cd;
 }
-.item-fifth{
-    background-color: #dc3d66;
-    height: 102px;
+.widget__item--yellow .widget__weather, .widget__item--pink .widget__weather {
+  margin-top: auto;
+  margin-bottom: 35px;
 }
-.item-six{
-    background-color: #bd54cd;
+.widget__item--yellow .widget__icon, .widget__item--pink .widget__icon {
+  margin-top: 40px;
 }
-
-
-
-.widget-forecast, .week-day, .week-temperature{
-    font-size: 16px;
-    font-family: "Avenir Next";
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
+.widget__item--pink .widget__icon {
+  padding: 13px;
 }
-.week-day, .week-temperature{
-    font-size: 12px;
+.widget__icon {
+  margin-top: 45px;
 }
-
-.widget-week{
-    background-color: #b03153;
-    height: 102px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.widget__icon__week {
+  margin-top: 23px;
 }
-.week-item{
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding-right: 15px;
+.widget__weather {
+  margin-top: auto;
+  margin-bottom: 45px;
 }
-.week-item:last-child{
-    padding-right: 0;
+.widget__week {
+  background-color: #b03153;
+  height: 102px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.widget__day {
+  font-size: 12px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.widget__day:last-child {
+  padding-right: 0px;
+}
