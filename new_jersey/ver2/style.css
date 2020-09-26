@@ -43,7 +43,7 @@
 .widget {
     background-color: #f1f8f9;
     width: 388.99px;
-    height: 464px;
+    height: 460px;
     border-radius: 10px 10px 29px 29px;
     display: flex;
     flex-direction: column;
@@ -163,6 +163,11 @@
 }
 
 .scroll-dots {
+    width: 45px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 
