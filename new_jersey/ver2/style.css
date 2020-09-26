@@ -49,14 +49,14 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.header {
+.widget__header {
     display: flex;
     justify-content: flex-end;
     padding-top: 16px;
     padding-right: 17px;
     border-radius: 10px 10px 0 0;
 }
-.main {
+.widget__main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,45 +64,45 @@
     padding-top: 10px;
 }
 
-.forecast {
+.widget__forecast {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.info {
+.widget__info {
     display: flex;
     align-items: flex-start;
     font-family: "Proxima Nova Light";
     font-size: 58px;
     margin-left: 20px;
 }
-.temperature {
+.widget__temperature {
     color: #a5acaf;
 }
-.info img {
+.widget__info img {
     padding-left: 5px;
     padding-top: 16px;
 }
 
-.description_location {
+.widget__description-location {
     display: flex;
     flex-direction: column;
     margin-right: 37px;
 }
-.description {
+.widget__description {
     font-family: "SourceSansPro-Light";
     color: #bac2c6;
     font-size: 24px;
 }
-.location {
+.widget__location {
     font-family: "SourceSansPro-Semibold";
     color: #a2a9ad;
     font-size: 16px;
 }
 
-.date {
+.widget__date {
     background-color: #54bae6;
     width: 65px;
     height: 69px;
@@ -114,12 +114,12 @@
     font-weight: 700;
     color: #ffffff;
 }
-.month {
+.widget__month {
     padding-top: 5px;
     text-transform: uppercase;
 }
 
-.footer {
+.widget__footer {
     background-color: #2e3335;
     width: 388.99px;
     height: 136px;
@@ -130,7 +130,7 @@
     justify-content: space-between;
 }
 
-.additional-info {
+.widget__additional-info {
     width: 330px;
     margin-top: 46px;
     display: flex;
@@ -162,7 +162,7 @@
     margin-right: 15px;
 }
 
-.scroll-dots {
+.widget__scroll-dots {
     width: 45px;
     height: 12px;
     display: flex;
