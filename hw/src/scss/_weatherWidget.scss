@@ -1,89 +1,100 @@
 @import "_variablesForWW";
 @font-face {
-    font-family: $FONTF;
-    src: $FONTFURL format("opentype");
+  font-family: $FONTF;
+  src: $FONTFURL format("opentype");
 }
 
-@mixin bcAndTs ($color, $tsColor, $tsSize: $SHODOWSIZE, $transparency:$SHODOWTRANSPARENCY) {
-    background-color: $color;
-    text-shadow: $tsSize rgba($tsColor, $transparency);
+@mixin backgrounds-and-transparency(
+  $color,
+  $tsColor,
+  $tsSize: $SHODOWSIZE,
+  $transparency: $SHODOWTRANSPARENCY
+) {
+  background-color: $color;
+  text-shadow: $tsSize rgba($tsColor, $transparency);
 }
 
-.weatherWidget {
-    font-family: $FONTF;
-    font-size: $FONTSMEDIUM;
-    line-height: $LINEH;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $WHITE;
-    height: $HEIGHTWW;
-    width: $WIDTHWW;
+.wrapper {
+  width: $WIDTWRAPPER;
+  height: $HEIGHTWRAPPER;
+  background: $BGWRAPPER no-repeat center center fixed;
+  background-size: cover;
+}
+
+.weather-widget {
+  font-family: $FONTF;
+  font-size: $FONTSMEDIUM;
+  line-height: $LINEH;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $WHITE;
+  height: $HEIGHTWW;
+  width: $WIDTHWW;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: $BOXSHADOWWW;
+  position: absolute;
+  margin: auto;
+  top: $TOPWW;
+  right: $RIGHTWW;
+  bottom: $BOTTOMWW;
+  left: $LEFTWW;
+  &__block {
+    height: $HEIGHTBLOCK;
+    width: $WIDTHBLOCK;
+    box-shadow: $BOXSHADOWBLOCK;
     display: flex;
-    flex-flow: row wrap;
-    box-shadow: $BOXSHADOWWW;
-    position: absolute;
-    margin: auto;
-    top: $TOPWW;
-    right: $RIGHTWW;
-    bottom: $BOTTOMWW;
-    left: $LEFTWW;
-    .block {
-        height: $HEIGHTBLOCK;
-        width: $WIDTHBLOCK;
-        box-shadow: $BOXSHADOWBLOCK;
-        display: flex;
-        align-items: center;
-        align-content: space-between;
-        flex-direction: column;
-        justify-content: center;
-        &.first {
-            @include bcAndTs ($CYAN, $CYANFORSHODOW);
-        }
-        &.second {
-            @include bcAndTs ($GREENCYAN, $GREENCYANFORSHODOW);
-        }
-        &.third {
-            @include bcAndTs ($BLUEMAGENTA, $BLUEMAGENTAFORSHODOW);
-        }
-        &.fourth {
-            @include bcAndTs ($YELLOW, $YELLOWFORSHODOW);
-        }
-        &.fifth {
-            @include bcAndTs ($PINK, $PINKFORSHODOW);
-        }
-        &.sixth {
-            @include bcAndTs ($MAGENTA, $MAGENTAFORSHODOW);
-        }
-        .weather {
-            height: $HEIGHTPICTURE;
-            display: flex;
-            align-items: center;
-        }
-        .forecast {
-            margin: $MARGINP;
-        }
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    &_first {
+      @include backgrounds-and-transparency($CYAN, $CYANFORSHODOW);
     }
-}
-
-.inWeek {
+    &_second {
+      @include backgrounds-and-transparency($GREENCYAN, $GREENCYANFORSHODOW);
+    }
+    &_third {
+      @include backgrounds-and-transparency($BLUE, $BLUEFORSHODOW);
+    }
+    &_fourth {
+      @include backgrounds-and-transparency($YELLOW, $YELLOWFORSHODOW);
+    }
+    &_fifth {
+      @include backgrounds-and-transparency($PINK, $PINKFORSHODOW);
+    }
+    &_sixth {
+      @include backgrounds-and-transparency($MAGENTA, $MAGENTAFORSHODOW);
+    }
+  }
+  &__img {
+    height: $HEIGHTPICTURE;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    margin: $MARGINP;
+  }
+  &__list {
     background-color: $DARKPINK;
     display: flex;
     justify-content: space-around;
     height: $HEIGHTUL;
     width: $WIDTHUL;
-    li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        font-size: $FONTSSMALL;
-        padding-top: $PADDINGTOPLI;
-        padding-bottom: $PADDINGBOTTOMLI;
-        &:first-child {
-            padding-left: $PADDINGLEFTRIGHTLI;
-        }
-        &:last-child {
-            padding-right: $PADDINGLEFTRIGHTLI;
-        }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: $FONTSSMALL;
+    padding-top: $PADDINGTOPLI;
+    padding-bottom: $PADDINGBOTTOMLI;
+    &:first-child {
+      padding-left: $PADDINGLEFTRIGHTLI;
     }
+    &:last-child {
+      padding-right: $PADDINGLEFTRIGHTLI;
+    }
+  }
 }

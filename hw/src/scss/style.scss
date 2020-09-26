@@ -1,7 +1,2 @@
 @import "_nullstyle";
-@import "_variables";
 @import "_weatherWidget";
-body {
-    background: $BGFORBODY no-repeat center center fixed;
-    background-size: cover;
-}

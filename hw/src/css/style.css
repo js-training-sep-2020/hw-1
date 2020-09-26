@@ -83,7 +83,14 @@ h6 {
   src: url(../fonts/AvenirNextCyr-Bold.ttf) format("opentype");
 }
 
-.weatherWidget {
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.weather-widget {
   font-family: AvenirNext;
   font-size: 16px;
   line-height: 12px;
@@ -109,7 +116,7 @@ h6 {
   left: 0;
 }
 
-.weatherWidget .block {
+.weather-widget__block {
   height: 206px;
   width: 205px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -131,37 +138,37 @@ h6 {
           justify-content: center;
 }
 
-.weatherWidget .block.first {
+.weather-widget__block_first {
   background-color: #05b3db;
   text-shadow: 0px 1px 0px rgba(6, 179, 219, 0.75);
 }
 
-.weatherWidget .block.second {
+.weather-widget__block_second {
   background-color: #4ed385;
   text-shadow: 0px 1px 0px rgba(77, 209, 132, 0.75);
 }
 
-.weatherWidget .block.third {
+.weather-widget__block_third {
   background-color: #6038f5;
   text-shadow: 0px 1px 0px rgba(97, 57, 246, 0.75);
 }
 
-.weatherWidget .block.fourth {
+.weather-widget__block_fourth {
   background-color: #e3b63d;
   text-shadow: 0px 1px 0px rgba(227, 182, 61, 0.75);
 }
 
-.weatherWidget .block.fifth {
+.weather-widget__block_fifth {
   background-color: #dc3d66;
   text-shadow: 0px 1px 0px rgba(220, 61, 102, 0.75);
 }
 
-.weatherWidget .block.sixth {
+.weather-widget__block_sixth {
   background-color: #bd53cd;
   text-shadow: 0px 1px 0px rgba(189, 84, 205, 0.75);
 }
 
-.weatherWidget .block .weather {
+.weather-widget__img {
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,11 +178,11 @@ h6 {
           align-items: center;
 }
 
-.weatherWidget .block .forecast {
+.weather-widget__text {
   margin: 16px 0 16px;
 }
 
-.inWeek {
+.weather-widget__list {
   background-color: #bc3459;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +193,7 @@ h6 {
   width: 100%;
 }
 
-.inWeek li {
+.weather-widget__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,15 +211,10 @@ h6 {
   padding-bottom: 14px;
 }
 
-.inWeek li:first-child {
+.weather-widget__item:first-child {
   padding-left: 24px;
 }
 
-.inWeek li:last-child {
+.weather-widget__item:last-child {
   padding-right: 24px;
-}
-
-body {
-  background: url(../img/background.png) no-repeat center center fixed;
-  background-size: cover;
 }
