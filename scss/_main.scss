@@ -19,21 +19,21 @@
     flex-direction: column;
     align-items: center;
     @each $name, $color in $name-colors{
-        &--#{$name} {
+        &_#{$name} {
         background: $color;
       }
     }
-    &--yellow, &--pink{
+    &_yellow, &_pink{
       .widget__weather{margin-top: auto; margin-bottom: 35px;}
       .widget__icon{margin-top: 40px;}
     }
-    &--pink{
+    &_pink{
       .widget__icon{padding: 13px;}
     }
   }
   &__icon{
       margin-top: 45px;
-      &__week{
+      &_small{
         margin-top: 23px;
       }
   }
@@ -45,6 +45,7 @@
     background-color: $dark-red-color;
     height: 102px;
     width: inherit;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;

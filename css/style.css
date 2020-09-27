@@ -25,38 +25,38 @@
   flex-direction: column;
   align-items: center;
 }
-.widget__item--blue {
+.widget__item_blue {
   background: #06b3db;
 }
-.widget__item--green {
+.widget__item_green {
   background: #4ed486;
 }
-.widget__item--purple {
+.widget__item_purple {
   background: #6139f6;
 }
-.widget__item--yellow {
+.widget__item_yellow {
   background: #e3b63d;
 }
-.widget__item--red {
+.widget__item_red {
   background: #dc3d66;
 }
-.widget__item--pink {
+.widget__item_pink {
   background: #bd54cd;
 }
-.widget__item--yellow .widget__weather, .widget__item--pink .widget__weather {
+.widget__item_yellow .widget__weather, .widget__item_pink .widget__weather {
   margin-top: auto;
   margin-bottom: 35px;
 }
-.widget__item--yellow .widget__icon, .widget__item--pink .widget__icon {
+.widget__item_yellow .widget__icon, .widget__item_pink .widget__icon {
   margin-top: 40px;
 }
-.widget__item--pink .widget__icon {
+.widget__item_pink .widget__icon {
   padding: 13px;
 }
 .widget__icon {
   margin-top: 45px;
 }
-.widget__icon__week {
+.widget__icon_small {
   margin-top: 23px;
 }
 .widget__weather {
@@ -67,6 +67,7 @@
   background-color: #b03153;
   height: 102px;
   width: inherit;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
