@@ -1,52 +1,62 @@
 @import 'fonts.css';
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  }
 
 .weather{ 
   max-width: 390px;
   background-color: #f1f8f9;
   margin: 0 auto;
-  border-radius: 10px;
   box-shadow: 0px 21px 20.16px 0.84px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
-/* weather top */
-.weather__top {
+/* weather header */
+.weather-header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.weather-header__refresh {
   display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  padding-right: 16px;
+  z-index: 3;  
 }
 
-.wt__item {
-  position: relative;
-  flex: 1 1 0;
-  padding: 64px 0 52px;
+.weather-header__item {
+  display: flex;
+  justify-content: center;
+  padding: 34px 0 52px;
   text-align: center;
   color: #a5acaf;
 }
-.wt__refresh {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 3;  
-  }
 
-/* weather middle */
-.weather__middle {
+/* weather main */
+.weather-main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 18px;
   color: #a5acaf;
 }
-.wm__item {
+
+.weather-main__item:first-child {
   display: flex;
   padding: 4px 16px 0 22px;
   text-align: center;
 }
-.wm__degrees{
+
+.weather-main__degrees{
   font-size: 48px;
   font-family: "Proxima Nova Light";  
   text-align: center;
 }
 
-.o {
+.weather-main__degree-symbol {
   font-size: 14px;
   font-family: "Proxima Nova Regular";
   color: rgb(141, 147, 150);
@@ -54,9 +64,9 @@
   position: relative;
   right: -6px;
   top: 10px;
-
 }
-.wm__item_middle {
+
+.weather-main__item:nth-child(2) {
   text-align: left;
   margin: 12px 44px 12px 0;
   font-family: "Source Sans Pro";
@@ -64,71 +74,82 @@
   line-height: 1.2;
 }
 
-.wm__weather{
+.weather-main__weather{
   font-size: 24px;
   font-weight: 300;
   color: rgb(186, 194, 198);
 }
 
-.wm__location{
+.weather-main__location{
   font-size: 16px;
   color: rgb(162, 169, 173);
 }
 
-.wm__lastitem{
+.weather-main__item:last-child{
   background-color: #54bae6;
   font-family: "Open Sans Bold";
   padding: 18px 16px 14px 20px;
   color: #ffffff;
 }
-.wm__date {
+
+.weather-main__date {
   font-size: 18px;
   text-align: center;
 }
-.wm__month {
+
+.weather-main__month {
   font-size: 14px;
   line-height: 1.2;
 }
 
-/* weather bottom */
-
-.weather_bottom {
+/* weather footer */
+.weather-footer {
   background-color: #2e3335;
   border-bottom-right-radius: 10px; 
   border-bottom-left-radius: 10px;
 }
-.wb__parameters{padding: 42px 46px;
+
+.weather-footer__parameters{
+  padding: 42px 46px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wb__item {
+
+.weather-footer__item {
   display: flex;
   text-align: center;
   color: #525a5d;
 }
-.wb__item:last-child { margin-right: 8px;}
-.wb__text {
+
+.weather-footer__item:last-child { 
+  margin-right: 8px;
+}
+
+.weather-footer__text {
   font-family: "Proxima Nova Bold";
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 20px;
   color: #ffffff;
 }
-  .wb__scroll{
+
+  .weather-footer__scroll{
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 18px;
-  }
-.scroll__selected{
+}
+
+.weather-footer__scroll__point-selected{
   margin: 0 4px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   width: 8px;
   height: 8px;
 }
-.scroll {
+
+.weather-footer__scroll__point {
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 255, 255);
@@ -139,4 +160,3 @@
   height: 6px;
   margin: 0 4px;
 }
-
