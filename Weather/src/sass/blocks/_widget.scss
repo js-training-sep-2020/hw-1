@@ -43,7 +43,7 @@
 
         &__wrapper {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             width: 205px;
             height: 99px;
@@ -82,7 +82,6 @@
 
         &_red {
             background-color: #dc3d66;
-            height: 106px;
         }
 
         &_pink {
