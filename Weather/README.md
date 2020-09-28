@@ -9,3 +9,8 @@
 ## Part 2 Deadline: 23.09
 Во второй части домашнего задания необходимо применить все недостающие стили. Постарайтесь сверстать кроссбраузерно (последние версии браузеров + ie11)
 
+To launch the widget you need to move to src folder and run index.html file in your browser.
+This widget is created using the SCSS preprocessor, BEM technology, bootstrap-reboot and gulp.
+
+
+
