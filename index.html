@@ -4,73 +4,91 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link  rel="stylesheet" type="text/css" href="style.css">
 	<title>Cubes</title>
 </head>
 <body>
-	<div class="wrap">
+
+	<section class="wrapper">
 	
-		<section class="main_content">
+		<div class="weather-widget">
 
-			<div class="cards card1">
+			<div class="weather-widget__card weather-widget__card_blue">
 				<img src="img\chicago.png" alt="chicago" />
-				<p>Chicago / 23°</p>
+				<div class="widget__card_info">Chicago / 23°</div>
 			</div>
 
-			<div class="cards card2">
+			<div class="weather-widget__card weather-widget__card_green">
 				<img src="img\seatle.png" alt="seatle" />
-				<p>Seattle / 34°</p>
+				<div class="widget__card_info">Seattle / 34°</div>
 			</div>
 
-			<div class="cards card3">
+			<div class="weather-widget__card weather-widget__card_darkblue">
 				<img src="img\brooklyn.png" alt="brooklyn" />
-				<p>Brooklyn / 55°</p>
+				<div class="widget__card_info">Brooklyn / 55°</div>
 			</div>
 
-			<div class="cards card4">
+			<div class="weather-widget__card weather-widget__card_yellow">
 				<img src="img\portland.png" alt="portland" />
-				<p>Portland / 27°<p>
+				<div class="widget__card_info">Portland / 27°</div>
 			</div>
 
-			<div class="cards card5">
-				<div class="card5-top">
+			<div class="weather-widget__card weather-widget__card_red">
+
+				<div class="weather-widget__card_top">
 					<img src="img\submenu.png" alt="selected card" />
 				</div>
-				<div class="card5-bottom">
-					<div class="day">
-						<p>MON</p>
-						<img src="img\chicago.png" alt="monday" />
-						<p>21°</p>
-					</div>
-					<div class="day">
-						<p>TUE</p>
-						<img src="img\chicago.png" alt="tuesday" />
-						<p>19°</p>
-					</div>
-					<div class="day">
-						<p>WEN</p>
-						<img src="img\san jose.png" alt="wendsday" />
-						<p>16°</p>
-					</div>
-					<div class="day">
-						<p>THU</p>
-						<img src="img\brooklyn.png" alt="thursday" />
-						<p>14°</p>
-					</div>
-					<div class="clearfix"></div>
+
+				<div class="weather-widget__card_bottom">
+
+					<ul class="weather-widget__card__week">
+							<li class="card__day">
+								<span class="day__abbreviation">mon</span>
+								<div class="day__image-wrapper">
+									<img class="day__image" src="img\chicago.png" alt="monday"/>
+								</div>
+								<span class="day__temperature">22°</span>
+							</li>
+						
+							<li class="card__day">
+								<span class="day__abbreviation">tue</span>
+								<div class="day__image-wrapper">
+									<img class="day__image" src="img\chicago.png" alt="monday"/>
+								</div>
+								<span class="day__temperature">19°</span>
+							</li>
+
+							<li class="card__day">
+								<span class="day__abbreviation">wen</span>
+								<div class="day__image-wrapper">
+									<img class="day__image" src="img\san jose.png" alt="monday"/>
+								</div>
+								<span class="day__temperature">18°</span>
+							</li>
+
+							<li class="card__day">
+								<span class="day__abbreviation">thu</span>
+								<div class="day__image-wrapper">
+									<img class="day__image" src="img\brooklyn.png" alt="monday"/>
+								</div>
+								<span class="day__temperature">14°</span>
+							</li>
+					</ul>
+					
 				</div>
 			</div>
 
-			<div class="cards card6">
+			<div class="weather-widget__card weather-widget__card_purple">
 				<img src="img\san jose.png" alt="sanjose" />
-				<p>San jose / 47°</p>
+				<div class="widget__card_info fix">San jose / 47°</div>
 			</div>
 
-			<div class="clearfix"></div>
-		</section>
+			
+		</div>
 		
-	</div>
+	</section>
+
 </body>
 </html>
+
