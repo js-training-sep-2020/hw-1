@@ -6,17 +6,18 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
-  width: 800px;
-  height: 600px;
-  background: url("../img/bg-widget.png") no-repeat center 100%;
+  padding: 150px 0;
+  background: url("../img/bg-widget.png");
+  background-position: center;
+  background-size: cover;
 }
 .widget__container {
-  padding: 95px 92.5px;
+  margin: auto;
   width: 615px;
   height: 410px;
   display: flex;
   flex-wrap: wrap;
-  background-image: url("../img/bg-container.png");
+  box-shadow: 0 0 60px #000000;
 }
 .widget__item {
   height: 205px;
