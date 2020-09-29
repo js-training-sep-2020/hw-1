@@ -8,7 +8,6 @@
    display: block;
    width: 207px;
    height: 207px;
-   /* border: 1px solid rgba(0, 0, 0, .1); */
 }
 
 .weather-widget__box_blue {
@@ -61,7 +60,6 @@
    display: flex;
    flex-direction: row;
    background: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, .01), rgba(0, 0, 0, .15));
-   /* transition-delay: 300ms; */
 }
 
 .weather-widget__box:hover .weather-widget__title_hide {
@@ -70,7 +68,6 @@
 
 .weather-widget__box:hover .weather-widget__icon_hide {
    height: 50%;
-   /* transition: 300ms ease-in-out; */
 }
 
 .weather-widget__day {
