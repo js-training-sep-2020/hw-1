@@ -141,7 +141,7 @@
   padding-bottom: 18px;
 }
 
-.weather-footer__scroll__point-selected{
+.weather-footer__point-selected{
   margin: 0 4px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
@@ -149,7 +149,7 @@
   height: 8px;
 }
 
-.weather-footer__scroll__point {
+.weather-footer__point {
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 255, 255);
