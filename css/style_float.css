@@ -40,7 +40,7 @@ html {
     height: 198px;
 }
 
-.widget__square h1 {
+.widget__text {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 1em;
@@ -49,7 +49,7 @@ html {
     margin-bottom: 44px;
 }
 
-.widget__square__icon {
+.widget__icon {
     margin-top: 50px;
     height: 50px;
 }
@@ -71,15 +71,15 @@ html {
     height: 99px;
 }
 
-.widget__row__icon {
+.widget__row-icon {
     margin-top: 20px;
 }
 
-.widget__column__icon {
+.widget__column-icon {
     height: 20px;
 }
 
-.widget__column__text {
+.widget__column-text {
     color: white;
     margin-top: 7px;
     font-family: 'AvenirNextCyr-Medium', serif;

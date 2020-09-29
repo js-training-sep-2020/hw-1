@@ -40,12 +40,12 @@ body {
 }
 
 /*-----------------style by image and fonts in block------------------------*/
-.widget__square__icon {
+.widget__icon {
     height: 60px;
     margin: 40px 70px;
 }
 
-.widget__square__text {
+.widget__text {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 1em;
@@ -76,7 +76,7 @@ body {
 }
 
 /*-----------------style by image and fonts in "second-part" ------------------------*/
-.widget__column__icon {
+.widget__column-icon {
     height: 22px;
     margin: 5px;
 }
@@ -86,7 +86,7 @@ body {
     text-align: center;
 }
 
-.widget__column__text {
+.widget__column-text {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 0.75em;
