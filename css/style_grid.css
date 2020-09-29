@@ -1,11 +1,11 @@
 @import "fonts.css";
 
-*{
+* {
     margin: 0;
 }
 
 /*-----------------background-------------------*/
-body{
+body {
     background: url("../image/background/backgroundImage.png") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -14,19 +14,19 @@ body{
 }
 
 /*-----------------split by block---------------*/
-.content {
+.widget {
     max-width: 600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     grid-auto-rows: 1fr;
-    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.8),
-    10px 10px 50px rgba(0, 0, 0, 0.8),
-    -10px -10px 50px rgba(0, 0, 0, 0.8),
-    -10px 10px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.2),
+    10px 10px 50px rgba(0, 0, 0, 0.2),
+    -10px -10px 50px rgba(0, 0, 0, 0.2),
+    -10px 10px 50px rgba(0, 0, 0, 0.2);
     margin: 10% auto;
 }
 
-.content::before {
+.widget::before {
     content: '';
     width: 0;
     padding-bottom: 100%;
@@ -34,92 +34,90 @@ body{
     grid-column: 1 / 1;
 }
 
-.content > *:first-child {
+.widget > *:first-child {
     grid-row: 1 / 1;
     grid-column: 1 / 1;
 }
 
 /*-----------------style by image and fonts in block------------------------*/
-.icons{
-    height: 76px;
-    margin: 46px 56px;
+.widget__square__icon {
+    height: 60px;
+    margin: 40px 70px;
 }
 
-.block h1{
+.widget__square__text {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 1em;
     text-align: center;
-    margin-top: -29px;
 }
 
 /*--------------split into row in block "every day"---------------*/
-.row{
+.widget__row {
     display: grid;
     grid-template-rows: 1fr;
 }
 
-.second-part{
+.widget__second-part {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 5.5em;
 }
 
 /*--------------split into columns in block "every day"----------------*/
-.column-day{
+.widget__column {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
 /*-----------------style by image and fonts in "first-part" ------------------------*/
-.first-part img{
+.widget__first-part__icon {
     height: 64px;
     margin: 24px 62px;
 }
 
 /*-----------------style by image and fonts in "second-part" ------------------------*/
-.second-part img{
+.widget__column__icon {
     height: 22px;
     margin: 5px;
 }
 
-.second-part{
+.widget__second-part {
     background-color: #bd3559;
     text-align: center;
 }
 
-.second-part h1 {
+.widget__column__text {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 0.75em;
     margin-top: 10px;
 }
 
-.second-part p{
-    color: white;
-    font-family: 'AvenirNextCyr-Medium', serif;
-    font-size: 0.75em;
-}
 /*--------------background color of every block---------------*/
-.chicago{
+.widget__square_blue {
     background-color: #06b3db;
 }
 
-.seattle{
+.widget__square_green {
     background-color: #4ed486;
 }
 
-.brooklyn{
+.widget__square_dark-blue {
     background-color: #6139f6;
 }
 
-.portland{
+.widget__square_yellow {
     background-color: #e3b63d;
 }
 
-.every-day{
+.widget__square_pink {
     background-color: #dc3d66;
 }
 
-.san-jose{
+.widget__square_purple {
     background-color: #bd54cd;
+}
+
+.widget__row_dark-pink {
+    background-color: #bd3559;
 }

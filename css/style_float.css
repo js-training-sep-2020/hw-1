@@ -8,37 +8,39 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 /*-----------split by block and style block-------------*/
-.content {
+.widget {
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10%;
-    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.8),
-    10px 10px 50px rgba(0, 0, 0, 0.8),
-    -10px -10px 50px rgba(0, 0, 0, 0.8),
-    -10px 10px 50px rgba(0, 0, 0, 0.8);
+    margin-top: 20vh;
+    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.2),
+    10px 10px 50px rgba(0, 0, 0, 0.2),
+    -10px -10px 50px rgba(0, 0, 0, 0.2),
+    -10px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
-.block  {
+.widget::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.widget__square {
     width: 33.33333%;
     float: left;
     text-align: center;
+    height: 198px;
 }
 
-.three-col::after {
-    display: table;
-    clear: both;
-    content: '';
-}
-
-.block h1 {
+.widget__square h1 {
     color: white;
     font-family: 'AvenirNextCyr-Medium', serif;
     font-size: 1em;
@@ -47,91 +49,125 @@ html {
     margin-bottom: 44px;
 }
 
-.icons{
+.widget__square__icon {
     margin-top: 50px;
     height: 50px;
 }
 
 /*---------------split by columns in block "every day"------------*/
-
-.col-1-4 {
-    width: 25%;
-    float: left;
-    height: 100%;
+.widget__row {
+    flex: 1 0 100%;
+    height: 99px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.widget__bottom {
+    display: flex;
 }
 
-.icons2{
-    height: 50px;
-    margin-top: 19px;
-    margin-bottom: 19px;
+.widget__column {
+    flex: 1 0 20%;
+    height: 99px;
 }
 
-.icons-day{
+.widget__row__icon {
+    margin-top: 20px;
+}
+
+.widget__column__icon {
     height: 20px;
 }
 
-.col-1-4 h1{
+.widget__column__text {
     color: white;
+    margin-top: 7px;
     font-family: 'AvenirNextCyr-Medium', serif;
-    font-size: 14px;
-    margin: 12px 4px;
+    font-size: 0.9em;
+    text-align: center;
 }
-
-.col-1-4 p{
-    color: white;
-    font-family: 'AvenirNextCyr-Medium', serif;
-    font-size: 14px;
-    margin: 11px 4px;
-}
-
 
 /*--------------background color block---------------*/
-.chicago{
+.widget__square_blue {
     background-color: #06b3db;
 }
 
-.seattle{
+.widget__square_green {
     background-color: #4ed486;
 }
 
-.brooklyn{
+.widget__square_dark-blue {
     background-color: #6139f6;
 }
 
-.portland{
+.widget__square_yellow {
     background-color: #e3b63d;
 }
 
-.every-day{
+.widget__square_pink {
     background-color: #dc3d66;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.san-jose{
+.widget__square_purple {
     background-color: #bd54cd;
 }
 
-.second-part{
+.widget__row_dark-pink {
     background-color: #bd3559;
 }
 
 /*-----------media for change font-size and margin---------------*/
+/*-----------split by 2 columns-----------------*/
+@media screen and (max-width: 420px) {
+    .widget__square {
+        width: 50%;
+    }
 
+    .widget {
+        min-width: 100px;
+    }
+}
+
+/*-----------split by 1 columns-----------------*/
 @media screen and (max-width: 375px) {
-   .block h1{
-       font-size: 0.8em;
-    }
-    .col-1-4 h1{
-        font-size: 9px;
+    .widget__square {
+        width: 100%;
     }
 
-    .col-1-4 p{
-        font-size: 12px;
-        margin: 6px 4px;
+    .widget {
+        width: 200px;
+    }
+}
+
+@media screen and (max-height: 1402px) {
+    .widget {
+        margin: 10vh auto;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    .widget {
+        margin: 5vh auto;
+    }
+}
+
+@media screen and (max-height: 825px) {
+    .widget {
+        margin: 20vh auto;
+    }
+}
+
+
+@media screen and (max-height: 676px) {
+    .widget {
+        margin: 15vh auto;
+    }
+}
+
+@media screen and (max-height: 484px) {
+    .widget {
+        margin: 5vh auto;
     }
 }
