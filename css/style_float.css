@@ -1,0 +1,173 @@
+@import "fonts.css";
+
+html {
+    box-sizing: border-box;
+    background: url("../image/background/backgroundImage.png") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*-----------split by block and style block-------------*/
+.widget {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20vh;
+    box-shadow: 10px -10px 50px rgba(0, 0, 0, 0.2),
+    10px 10px 50px rgba(0, 0, 0, 0.2),
+    -10px -10px 50px rgba(0, 0, 0, 0.2),
+    -10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.widget::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.widget__square {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    height: 198px;
+}
+
+.widget__text {
+    color: white;
+    font-family: 'AvenirNextCyr-Medium', serif;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 44px;
+}
+
+.widget__icon {
+    margin-top: 50px;
+    height: 50px;
+}
+
+/*---------------split by columns in block "every day"------------*/
+.widget__row {
+    flex: 1 0 100%;
+    height: 99px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.widget__bottom {
+    display: flex;
+}
+
+.widget__column {
+    flex: 1 0 20%;
+    height: 99px;
+}
+
+.widget__row-icon {
+    margin-top: 20px;
+}
+
+.widget__column-icon {
+    height: 20px;
+}
+
+.widget__column-text {
+    color: white;
+    margin-top: 7px;
+    font-family: 'AvenirNextCyr-Medium', serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/*--------------background color block---------------*/
+.widget__square--blue {
+    background-color: #06b3db;
+}
+
+.widget__square--green {
+    background-color: #4ed486;
+}
+
+.widget__square--darkBlue {
+    background-color: #6139f6;
+}
+
+.widget__square--yellow {
+    background-color: #e3b63d;
+}
+
+.widget__square--pink {
+    background-color: #dc3d66;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget__square--purple {
+    background-color: #bd54cd;
+}
+
+.widget__row--darkPink {
+    background-color: #bd3559;
+}
+
+/*-----------media for change font-size and margin---------------*/
+/*-----------split by 2 columns-----------------*/
+@media screen and (max-width: 420px) {
+    .widget__square {
+        width: 50%;
+    }
+
+    .widget {
+        min-width: 100px;
+    }
+}
+
+/*-----------split by 1 columns-----------------*/
+@media screen and (max-width: 375px) {
+    .widget__square {
+        width: 100%;
+    }
+
+    .widget {
+        width: 200px;
+    }
+}
+
+@media screen and (max-height: 1402px) {
+    .widget {
+        margin: 10vh auto;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    .widget {
+        margin: 5vh auto;
+    }
+}
+
+@media screen and (max-height: 825px) {
+    .widget {
+        margin: 20vh auto;
+    }
+}
+
+
+@media screen and (max-height: 676px) {
+    .widget {
+        margin: 15vh auto;
+    }
+}
+
+@media screen and (max-height: 484px) {
+    .widget {
+        margin: 5vh auto;
+    }
+}
