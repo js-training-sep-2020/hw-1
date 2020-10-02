@@ -1,7 +1,22 @@
+.weather-widget__center-block {
+   height: 15vh;
+}
+
+@media (max-width: 620px) {
+   .weather-widget__center-block{
+      height: 0px;
+      transition: 500ms;
+   }
+}
+
+.weather-widget {
+   margin: 0px auto;
+   max-width: 627px;
+}
+
 .weather-widget__body{
    display: flex;
    flex-flow: row wrap;
-   max-width: 627px;
 }
 
 .weather-widget__box {
