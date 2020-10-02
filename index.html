@@ -10,52 +10,56 @@
   <link rel="stylesheet" href="./styles/weather_widget.css">
 </head>
 <body>
-<aside class="weather-widget">
-  <div class="weather-widget__main-info clearfix">
-    <div class="weather-widget__weather">
-      <p class="weather-widget__temp">12 °</p>
-      <p class="weather-widget__place">Paris, France</p>
-      <div class="weather-widget__wind">
-        <div class="weather-widget__wind-icon"></div>
-        <span class="weather-widget__wind-speed">14</span>
-        <span class="weather-widget__wind-unit">mph</span>
+<div class="page">
+  <div class="page__widget-container">
+    <aside class="weather-widget">
+      <div class="weather-widget__main-info clearfix">
+        <div class="weather-widget__weather">
+          <p class="weather-widget__temp">12 °</p>
+          <p class="weather-widget__place">Paris, France</p>
+          <div class="weather-widget__wind">
+            <div class="weather-widget__wind-icon"></div>
+            <span class="weather-widget__wind-speed">14</span>
+            <span class="weather-widget__wind-unit">mph</span>
+          </div>
+        </div>
+        <div class="weather-widget__day">
+          <p class="weather-widget__day-of-week">Friday</p>
+          <p class="weather-widget__date">August, 23rd</p>
+        </div>
       </div>
-    </div>
-    <div class="weather-widget__day">
-      <p class="weather-widget__day-of-week">Friday</p>
-      <p class="weather-widget__date">August, 23rd</p>
-    </div>
+      <div class="carousel">
+        <div class="carousel__nav-arrows carousel__nav-arrows_left"></div>
+        <div class="carousel__forecast-container">
+          <div class="carousel__daily-forecast">
+            <p class="carousel__day-of-week">Monday</p>
+            <div class="weather-icon weather-icon__rain carousel__weather-icon"></div>
+            <p class="carousel__temperature">10 °</p>
+          </div>
+          <div class="carousel__divider"></div>
+          <div class="daily-forecast">
+            <p class="carousel__day-of-week">Tuesday</p>
+            <div class="weather-icon weather-icon__cloudy carousel__weather-icon"></div>
+            <p class="carousel__temperature">15 °</p>
+          </div>
+          <div class="carousel__divider"></div>
+          <div class="daily-forecast">
+            <p class="carousel__day-of-week">Wednesday</p>
+            <div class="weather-icon weather-icon__sunny carousel__weather-icon"></div>
+            <p class="carousel__temperature">23 °</p>
+          </div>
+          <div class="carousel__divider"></div>
+          <div class="daily-forecast">
+            <p class="carousel__day-of-week">Thursday</p>
+            <div class="weather-icon weather-icon__overcast carousel__weather-icon"></div>
+            <p class="carousel__temperature">18 °</p>
+          </div>
+        </div>
+        <div class="carousel__nav-arrows carousel__nav-arrows_right"></div>
+      </div>
+    </aside>
   </div>
-  <div class="carousel">
-    <div class="carousel__nav-arrows carousel__nav-arrows_left"></div>
-    <div class="carousel__forecast-container">
-      <div class="carousel__daily-forecast">
-        <p class="carousel__day-of-week">Monday</p>
-        <div class="weather-icon weather-icon__rain carousel__weather-icon"></div>
-        <p class="carousel__temperature">10 °</p>
-      </div>
-      <div class="carousel__divider"></div>
-      <div class="daily-forecast">
-        <p class="carousel__day-of-week">Tuesday</p>
-        <div class="weather-icon weather-icon__cloudy carousel__weather-icon"></div>
-        <p class="carousel__temperature">15 °</p>
-      </div>
-      <div class="carousel__divider"></div>
-      <div class="daily-forecast">
-        <p class="carousel__day-of-week">Wednesday</p>
-        <div class="weather-icon weather-icon__sunny carousel__weather-icon"></div>
-        <p class="carousel__temperature">23 °</p>
-      </div>
-      <div class="carousel__divider"></div>
-      <div class="daily-forecast">
-        <p class="carousel__day-of-week">Thursday</p>
-        <div class="weather-icon weather-icon__overcast carousel__weather-icon"></div>
-        <p class="carousel__temperature">18 °</p>
-      </div>
-    </div>
-    <div class="carousel__nav-arrows carousel__nav-arrows_right"></div>
-  </div>
-</aside>
+</div>
 
 </body>
 </html>
