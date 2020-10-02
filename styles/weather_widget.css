@@ -6,7 +6,7 @@
   height: 0;
 }
 
-#weather-widget {
+.weather-widget {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 696px;
@@ -18,12 +18,12 @@
   background: url("../img/bg_paris.jpg") #D8DEE2;
 }
 
-#weather-widget * {
+.weather-widget * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-#weather-widget #main-part {
+.weather-widget__main-info {
   position: relative;
   height: 327px;
   padding: 68px 60px 0;
@@ -32,46 +32,46 @@
 /* ======================================== */
 /*  Current day                             */
 /* ======================================== */
-#weather-widget #current-day {
+.weather-widget__day {
   float: right;
   margin: 0 26px 0 0;
 }
 
-#weather-widget #current-day-of-week {
+.weather-widget__day-of-week {
   margin: 6px 0 2px 0;
   font-size: 30px;
   letter-spacing: 0.02em;
 }
 
-#weather-widget #current-date {
+.weather-widget__date {
   font-size: 14px;
 }
 
 /* ======================================== */
 /*  Current weather                         */
 /* ======================================== */
-#weather-widget #current-weather {
+.weather-widget__weather {
   float: right;
 }
 
-#weather-widget #current-temp {
+.weather-widget__temp {
   margin: 0 0 1px 0;
   font-size: 92px;
   font-weight: 900;
 }
 
-#weather-widget #current-place {
+.weather-widget__place {
   margin: 0 0 20px 4px;
   font-size: 22px;
   letter-spacing: 0.02em;
 }
 
-#weather-widget #current-wind {
+.weather-widget__wind {
   margin: 0 0 0 4px;
   font-weight: 700;
 }
 
-#weather-widget #current-wind #wind-icon {
+.weather-widget__wind-icon {
   display: inline-block;
   vertical-align: bottom;
   width: 43px;
@@ -80,13 +80,13 @@
   background: no-repeat url("../img/icon_wind.png");
 }
 
-#weather-widget #wind-speed {
+.weather-widget__wind-speed {
   display: inline-block;
   margin-right: 4px;
   font-size: 30px;
 }
 
-#weather-widget #wind-unit {
+.weather-widget__wind-unit {
   display: inline-block;
   font-size: 14px;
 }
@@ -94,7 +94,7 @@
 /* ======================================== */
 /*  Carousel. Weather forecast              */
 /* ======================================== */
-#weather-widget #carousel {
+.carousel {
   height: 108px;
   width: 696px;
   text-align: center;
@@ -102,24 +102,24 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-#weather-widget .nav-arrows {
+.carousel__nav-arrows {
   display: inline-block;
   width: 16px;
   height: 108px;
   cursor: pointer;
 }
 
-#weather-widget #arrow-left {
+.carousel__nav-arrows_left {
   float: left;
   background: center no-repeat url("../img/icon_arrow_left.png");
 }
 
-#weather-widget #arrow-right {
+.carousel__nav-arrows_right {
   float: right;
   background: center no-repeat url("../img/icon_arrow_right.png");
 }
 
-#weather-widget .divider {
+.carousel__divider {
   display: inline-block;
   width: 0;
   height: 80px;
@@ -127,38 +127,41 @@
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#weather-widget #forecast-container,
-#weather-widget #forecast-container > * {
+.carousel__forecast-container,
+.carousel__forecast-container > * {
   display: inline-block;
   vertical-align: top;
 }
 
-#weather-widget .day-of-week {
+.carousel__day-of-week {
   padding: 10px 24px 0;
 }
 
-#weather-widget .temperature {
+.carousel__temperature {
   padding: 0 0 0 8px;
 }
 
-#weather-widget .weather-icons {
-  width: 48px;
-  height: 36px;
+.carousel__weather-icon {
   margin: 8px auto;
 }
 
-#weather-widget #rain-icon {
+.weather-icon {
+  width: 48px;
+  height: 36px;
+}
+
+.weather-icon__rain {
   background: url("../img/icon_weather_rain.png");
 }
 
-#weather-widget #cloudy-icon {
+.weather-icon__cloudy {
   background: url("../img/icon_weather_cloudy.png");
 }
 
-#weather-widget #sunny-icon {
+.weather-icon__sunny {
   background: url("../img/icon_weather_sunny.png");
 }
 
-#weather-widget #overcast-icon {
+.weather-icon__overcast {
   background: url("../img/icon_weather_overcast.png");
 }
