@@ -1,0 +1,158 @@
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0 auto;
+}
+.backgr{
+    background: #ffffff url("images/Tokyo_backgr.png") no-repeat center center fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.widget__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.widget{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    min-height: 400px;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 5px;
+    height: 76%;
+    width: 50%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.position_parent{
+    position: relative;
+}
+.box_position{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.box_position_text{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.widget__left_box{
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #ffffff url("images/Tokyo_leftSide.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    float: left;
+    width: 50%;
+}
+.widget__left_box__weather_img{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.widget__left_box__sky{
+    height: 55%;
+    background-image: url("images/sunny.png");
+
+}
+.widget__left_box__sky_description{
+    background-color: rgba(20, 1, 0, 0.85);
+    width: 100%;
+    height: 22%;
+}
+.widget__left_box__sky_description_text{
+    font-size: 3rem;
+}
+.widget__left_box__date_text{
+    font-size: 30px;
+}
+.widget__left_box__date{
+    background-color: rgba(125, 0, 10, 0.85);
+    width: 100%;
+    height: 23%;
+}
+.widget__vertical_line{
+    float: left;
+    height: 100%;
+    width: 6%;
+}
+.widget__right_box{
+    color: rgb(119, 25, 33);
+    float: left;
+    height: 100%;
+    width: 38%;
+}
+.widget__right_box__temp{
+    background-color: white;
+    height: 33%;
+    width: 100%;
+}
+.widget__right_box__temp_text{
+    font-size: 8rem;
+}
+.widget__right_box__graph{
+    border-bottom: #771921 1px solid;
+    border-top: #771921 1px solid;
+    height: 22%;
+    width: 100%;
+}
+.widget__right_box__next_day__vertical_line{
+    float: left;
+    height: 45%;
+    width: 13.5%;
+}
+.widget__right_box__next_day__img{
+    margin-top: 20%;
+    width: 80%;
+}
+.widget__right_box__next_day{
+    float: left;
+    height: 45%;
+    width: 24%;
+}
+.widget__right_box__next_day__img_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid #771921;
+    width: 100%;
+    height: 58%;
+}
+.widget__right_box__next_day__day_text{
+    margin-bottom: 15%;
+}
+.widget__right_box__next_day__text{
+    font-size: 25px;
+}
+.widget__right_box__next_day__temp{
+    width: 100%;
+}
+.widget__right_box__next_day__night_temp{
+    font-size: 25px;
+    color: black;
+}
+
+@media all and (max-width: 1410px) {
+    .widget__right_box__temp_text{
+        font-size: 7rem;
+    }
+}
+@media all and (max-width: 1235px) {
+    .widget__right_box__temp_text {
+        font-size: 6rem;
+    }
+}
+@media all and (max-width: 1070px) {
+    .widget__right_box__temp_text {
+        font-size: 5rem;
+    }
+}
+

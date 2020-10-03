@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tokyo</title>
+</head>
+<body>
+<div class="backgr position_parent">
+    <div class="widget box_position">
+        <div class="widget__left_box">
+            <div class="widget__left_box__sky widget__left_box__weather_img"></div>
+            <div class="widget__left_box__sky_description widget__container">
+                <span class="widget__left_box__sky_description_text">Sunny</span>
+            </div>
+            <div class="widget__left_box__date widget__container">
+                <span class="widget__left_box__date_text">Tokyo-Wednesday, July 31</span>
+            </div>
+        </div>
+        <div class="widget__vertical_line"></div>
+        <div class="widget__right_box">
+            <div class="widget__right_box__temp widget__container">
+                <span class="widget__right_box__temp_text">28 &degC</span>
+            </div>
+            <div class="widget__right_box__graph">
+                <svg viewBox="0 0 210 90"height="100%" width="100%">
+                    <polyline points="5,25 45,75 65,55 105,40 145,75 175,25 205,55" stroke="#771921" fill="none"/>
+                    <circle r="3" cx="5" cy="25" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="45" cy="75" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="65" cy="55" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="105" cy="40" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="145" cy="75" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="175" cy="25" fill="white" stroke="#771921" stroke-width="2"/>
+                    <circle r="3" cx="205" cy="55" fill="white" stroke="#771921" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/sunny_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Thu</b></span>
+                </div>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>28&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>18&degC</b></span>
+                </div>
+            </div>
+            <div class="widget__right_box__next_day__vertical_line"></div>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/cloudy_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Fri</b></span>
+                </div>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>22&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>20&degC</b></span>
+                </div>
+            </div>
+            <div class="widget__right_box__next_day__vertical_line"></div>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/cloudy_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Sat</b></span>
+                </div>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>30&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>27&degC</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
