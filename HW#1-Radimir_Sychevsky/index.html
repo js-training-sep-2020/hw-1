@@ -9,18 +9,22 @@
 <body>
 <div class="backgr position_parent">
     <div class="widget box_position">
-        <div class="left_box">
-            <div class="sky weather_img"></div>
-            <div class="description position_parent"><p class="box_position_text description_text">Sunny</p></div>
-            <div class="date position_parent"><p class="box_position_text date_text">Tokyo-Wednesday, July 31</p></div>
-        </div>
-        <div class="vertical_line"></div>
-        <div class="right_box">
-            <div class="temp position_parent">
-                <p class="box_position_text temp_text">28 &degC</p>
+        <div class="widget__left_box">
+            <div class="widget__left_box__sky widget__left_box__weather_img"></div>
+            <div class="widget__left_box__sky_description widget__container">
+                <span class="widget__left_box__sky_description_text">Sunny</span>
             </div>
-            <div class="graph">
-                <svg height="100" width="300">
+            <div class="widget__left_box__date widget__container">
+                <span class="widget__left_box__date_text">Tokyo-Wednesday, July 31</span>
+            </div>
+        </div>
+        <div class="widget__vertical_line"></div>
+        <div class="widget__right_box">
+            <div class="widget__right_box__temp widget__container">
+                <span class="widget__right_box__temp_text">28 &degC</span>
+            </div>
+            <div class="widget__right_box__graph">
+                <svg viewBox="0 0 210 90"height="100%" width="100%">
                     <polyline points="5,25 45,75 65,55 105,40 145,75 175,25 205,55" stroke="#771921" fill="none"/>
                     <circle r="3" cx="5" cy="25" fill="white" stroke="#771921" stroke-width="2"/>
                     <circle r="3" cx="45" cy="75" fill="white" stroke="#771921" stroke-width="2"/>
@@ -31,31 +35,37 @@
                     <circle r="3" cx="205" cy="55" fill="white" stroke="#771921" stroke-width="2"/>
                 </svg>
             </div>
-            <div class="next_day">
-                <div class="next_day_weather">
-                    <img class="img_next" src="images/sunny_next.png">
-                    <p class="next_day_text"><b>Thu</b></p>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/sunny_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Thu</b></span>
                 </div>
-                    <p class="next_day_text"><b>28&degC</b></p>
-                    <p class="last_temp"><b>18&degC</b></p>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>28&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>18&degC</b></span>
+                </div>
             </div>
-            <div class="vertical_line_s"></div>
-            <div class="next_day">
-                <div class="next_day_weather">
-                    <img class="img_next" src="images/cloudy_next.png">
-                    <p class="next_day_text"><b>Fri</b></p>
+            <div class="widget__right_box__next_day__vertical_line"></div>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/cloudy_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Fri</b></span>
                 </div>
-                    <p class="next_day_text"><b>22&degC</b></p>
-                    <p class="last_temp"><b>20&degC</b></p>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>22&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>20&degC</b></span>
+                </div>
             </div>
-            <div class="vertical_line_s"></div>
-            <div class="next_day">
-                <div class="next_day_weather">
-                    <img class="img_next" src="images/cloudy_next.png">
-                    <p class="next_day_text"><b>Sat</b></p>
+            <div class="widget__right_box__next_day__vertical_line"></div>
+            <div class="widget__right_box__next_day">
+                <div class="widget__right_box__next_day__img_box">
+                    <img class="widget__right_box__next_day__img" src="images/cloudy_next.png"><br>
+                    <span class="widget__right_box__next_day__text widget__right_box__next_day__day_text"><b>Sat</b></span>
                 </div>
-                    <p class="next_day_text"><b>30&degC</b></p>
-                    <p class="last_temp"><b>27&degC</b></p>
+                <div class="widget__right_box__next_day__temp widget__container">
+                    <span class="widget__right_box__next_day__text"><b>30&degC</b></span>
+                    <span class="widget__right_box__next_day__night_temp"><b>27&degC</b></span>
+                </div>
             </div>
         </div>
     </div>
