@@ -9,9 +9,9 @@ body {
 }
 
 .clearfix::after {
- content: "";
- display: table;
- clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .widget-container {
@@ -55,7 +55,7 @@ body {
 .weather-icon img {
 	position: absolute;
 	top: 25%;
- left: 25%;
+	left: 25%;
 }
 
 .weather-icon:before {
@@ -73,10 +73,10 @@ body {
 .city-and-date {
 	min-height: 93px;
 	opacity: 0.89;
- color: #ffffff;
- line-height: 48px;
- text-align: center;
- display:table;
+	color: #ffffff;
+	line-height: 48px;
+	text-align: center;
+	display:table;
 }
 
 .type-of-weather p,
@@ -87,8 +87,8 @@ body {
 
 .type-of-weather {
 	background-color: #2e1c25;
- font-weight: 200;
- font-size: 36px;
+	font-weight: 200;
+	font-size: 36px;
 }
 
 .city-and-date {
