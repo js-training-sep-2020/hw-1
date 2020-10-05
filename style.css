@@ -1,0 +1,187 @@
+html, body, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("src/img/background_image_1.png") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.widget-container {
+	width: 581px;
+	height: 438px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url("src/img/background_photo_1.png") no-repeat;
+	box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.44);
+	font-family: "Dosis", sans-serif;
+}
+
+.widget-photo,
+.weather-info {
+	width: 289px;
+	min-height: 438px;
+}
+
+.widget-photo {
+	float: left;
+	border-right: 1px solid #771921;
+}
+
+.weather-icon,
+.type-of-weather,
+.city-and-date {
+	float: left;
+	width: 289px;
+}
+
+.weather-icon {
+	min-height: 252px;
+	position: relative;
+	overflow: hidden;
+}
+
+.weather-icon img {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+.weather-icon:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 330px;
+	height: 252px;
+	background: linear-gradient(to top, rgba(255,255,255, 0), rgba(255,255,255, 0.45));
+	transform: translateX(-10.6em) skewX(-50deg);
+}
+
+.type-of-weather,
+.city-and-date {
+	min-height: 93px;
+	opacity: 0.89;
+	color: #ffffff;
+	line-height: 48px;
+	text-align: center;
+	display:table;
+}
+
+.type-of-weather p,
+.city-and-date p {
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.type-of-weather {
+	background-color: #2e1c25;
+	font-weight: 200;
+	font-size: 36px;
+}
+
+.city-and-date {
+	background-color: #771921;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.weather-info {
+	float: right;
+}
+
+.weather-info-container {
+	width: 210px;
+	min-height: 386px;
+	margin-left:39px;
+	margin-top: 25px;
+	display:table;
+}
+
+.temperature,
+.graph,
+.few-days-forecast {
+	float: left;
+	width: 210px;
+}
+
+.temperature,
+.graph {
+	border-bottom: 1px solid #771921;
+	color:#771921;
+}
+
+.temperature {
+	min-height: 106px;
+	font-weight: 200;
+	font-size: 100px;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.graph {
+	min-height: 98px;
+	text-align: center;
+}
+
+.graph img {
+	margin-top: 11%;
+}
+
+.few-days-forecast {
+	min-height: 171px;
+	list-style-type: none;
+}
+
+.one-day-weather {
+	width: 50px;
+	min-height: 148px;
+}
+
+.day-1 {
+	float: left;
+	margin-right: 14%;
+}
+
+.one-day-weather__icon-weekday {
+	width: 50px;
+	min-height: 80px;
+	border-bottom: 1px solid #771921;
+	padding-top:25px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	color:#771921;
+}
+
+.one-day-weather__temperature {
+	width: 50px;
+	min-height: 60px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	color:#771921;
+}
+
+.one-day-weather__temperature p:last-of-type {
+	color: #2e1c25;
+}
+
+.day-2 {
+	float: left;
+}
+
+.day-3 {
+	float: right;
+}
