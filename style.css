@@ -1,4 +1,7 @@
-
+.col{
+    padding-left: 0;
+    padding-right: 0;
+}
 body{
     vertical-align: middle;
     background-image: url(bg/bg.png);
@@ -60,10 +63,10 @@ span.weather-widget__text_week{
 
 .weather-widget__title_days_week{
     background-color: #b53355;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 .weather-widget__title_SanJose{
     background-color: #bd54cd;
